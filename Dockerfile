@@ -2,6 +2,9 @@
 FROM ubuntu:18.04
 MAINTAINER yatszhash
 
+ENV LC_ALL C.UTF-8
+ENV LANG C.UTF-8
+
 RUN apt-get update && \
       apt-get install -y software-properties-common curl && \
       add-apt-repository -y ppa:ubuntu-toolchain-r/ppa && \
